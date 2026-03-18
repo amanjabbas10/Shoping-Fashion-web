@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const ForgetPassword = () => {
   return (
     <div>
       <div className="home-login">
         <br />
-        <a className="back" href="/login">
+        <Link className="back" to="/login">
           <i className="fa-regular fa-circle-left">گەرانەوە </i>
-        </a>
+        </Link>
         {/* --------------- */}
         <form
           data-aos="fade-up"
@@ -57,12 +59,12 @@ const ForgetPassword = () => {
           <i style={{ color: "#1E293B" }} className="fa-solid fa-lock"></i>
           <br />
           <br />
-          <button className="btn-f">
-            <a href="/login">چوونەژوورەوە</a>
-          </button>
-          <button className="btn-f-0">
-            <a href="/sighnup">دروستکردنی ئەکاونت</a>
-          </button>
+          <Link className="btn-f" to="/login">
+            چوونەژوورەوە
+          </Link>
+          <Link className="btn-f-0" to="/sighnUp">
+            دروستکردنی ئەکاونت
+          </Link>
         </form>
       </div>
     </div>

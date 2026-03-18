@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Signup = () => {
   return (
     <div>
       <div className="home-login">
         <br />
-        <a className="back" href="/login">
+        <Link className="back" to="/login">
           <i className="fa-regular fa-circle-left">گەرانەوە </i>
-        </a>
+        </Link>
 
         <form
           data-aos="fade-up"
@@ -45,9 +47,9 @@ const Signup = () => {
           <i style={{ color: "#1E293B" }} className="fa-solid fa-lock"></i>
           <br />
           <br />
-          <button className="btn-f">
-            <a href="/login">چوونەژوورەوە</a>
-          </button>
+          <Link className="btn-f" to="/login">
+            چوونەژوورەوە
+          </Link>
           <br />
           <h5>داخل بە بەڕێگای ئەمانە</h5>
           <div className="all-icon">

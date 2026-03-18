@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+html.aos-missing [data-aos]{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -57,6 +63,10 @@
     transform: scale(0.96);
 }
 /* ----dropdown---- */
+.nav-item{
+    position: relative;
+    display: inline-block;
+}
 .dropdown{
     display: none;
     position: absolute;
@@ -75,7 +85,7 @@
 .dropdown ul li a{
     color:#1E293B;
 }
-nav a:hover .dropdown{
+ nav .nav-item:hover .dropdown{
     display: block;
 }
 /* ---dropdown----- */
@@ -107,12 +117,12 @@ nav .btn-4{
     background: none;
     background: wheat;
     color: black;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
     transition: all ease 0.3s 0s;
     box-shadow: 0 0 8px 1px wheat;
-}
-nav .btn-4 a{ 
-    color: black;
-    font-size: 14px;
 }
 nav .btn-4:hover{
     transform: scale(0.96);
@@ -123,11 +133,12 @@ nav .btn-5 {
     padding: 4px;
     border-radius: 5px;
     border:none;
-    transition: all ease 0.3s 0s;
-}
-nav .btn-5 a{
-    color: black;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
     font-size: 14px;
+    color: black;
+    transition: all ease 0.3s 0s;
 }
 nav .btn-5:hover{
     transform: scale(0.96);
@@ -205,17 +216,17 @@ form .btn-f-0{
     border-radius: 3px;
     padding: 3px;
     background: #3b82f6;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;    
+    color: white;
     transition: all ease 0.3s 0s;
     box-shadow:  0 0 5px 1px #3b82f6;
 }
 form .btn-f-0:hover{
     background: #478dff;
     transform: scale(0.99);
-}
-form .btn-f-0 a{
-    text-decoration: none;
-    font-size: 14px;    
-    color: white;
 }
 form  .btn-f {
     background: none;
@@ -226,17 +237,17 @@ form  .btn-f {
     border-radius: 3px;
     padding: 4px;
     background: #1E293B;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
     transition: all ease 0.3s 0s;
     box-shadow:  0 0 5px 2px #1E293B;
 }
 form  .btn-f:hover{
     transform: scale(0.99);
     background: #1f2e46
-}
-form  .btn-f a{
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
 }
 form  .btn-f-1{
     margin-left: 7rem;
@@ -373,10 +384,6 @@ font-size: 17px;
     text-align: center;
     margin-bottom: 9px;
 }
-.card-body button{
-    margin-bottom: 10px;
-    margin-left: 2.8rem;
-}
  .card-body .btn-card {
     width: 60%;
     padding: 3px;
@@ -385,16 +392,18 @@ font-size: 17px;
     border-radius: 2px;
     font-size: 15px;
     background: #1E293B;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 2.8rem;
     transition: all ease 0.3s 0s;
-}
+ }
  .card-body .btn-card:hover{
     transform: scale(0.95);
     box-shadow: 0 0 5px 1px #1E293B;
-}
-.card-body .btn-card a{
-    color: white;
-    text-decoration: none;
-}
+ }
 .all-card{
     display: flex;
 }

@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div>
       <div className="home-login">
         <br />
-        <a className="back" href="/">
+        <Link className="back" to="/">
           <i className="fa-regular fa-circle-left">گەرانەوە </i>
-        </a>
+        </Link>
         <form
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
@@ -29,17 +31,17 @@ const Login = () => {
           <br />
           <input dir="rtl" type="password" placeholder=" وشەی نهێنی" required />
           <i style={{ color: "#1E293B" }} className="fa-solid fa-lock"></i>
-          <a className="home-f" href="/forgetPassword">
+          <Link className="home-f" to="/forgetPassword">
             وشەی نهێنیت لەبیر کردووە؟
-          </a>
+          </Link>
           <br />
           <br />
-          <button className="btn-f">
-            <a href="/">چوونەژوورەوە</a>
-          </button>
-          <button className="btn-f-0">
-            <a href="/sighnup">دروستکردنی ئەکاونت</a>
-          </button>
+          <Link className="btn-f" to="/">
+            چوونەژوورەوە
+          </Link>
+          <Link className="btn-f-0" to="/sighnUp">
+            دروستکردنی ئەکاونت
+          </Link>
           <br />
           <h5>.داخل بە بەڕێگای ئەمانە</h5>
           <hr className="hr-hr-0" />

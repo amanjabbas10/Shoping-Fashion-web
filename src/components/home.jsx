@@ -6,6 +6,7 @@ import ReklamCart from "./reklamCart";
 import ReklamCart2 from "./reklamCart2";
 import Contact from "./contact";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 const home = () => {
   return (
     <div>
@@ -13,9 +14,11 @@ const home = () => {
         <nav>
           <img data-aos="fade-down" data-aos-duration="2400" src={img2} />
 
-          <a data-aos="fade-down" data-aos-duration="2200" href="#پەیوەندیکردن">
-            پەیوەندیکردن <i class="fa-solid fa-phone"></i>
-            <i class="fa-solid fa-angle-down"></i>
+          <div className="nav-item" data-aos="fade-down" data-aos-duration="2200">
+            <a href="#پەیوەندیکردن">
+              پەیوەندیکردن <i className="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-angle-down"></i>
+            </a>
             <div className="dropdown">
               <ul>
                 <li>
@@ -26,27 +29,30 @@ const home = () => {
                   <a
                     href="https://www.facebook.com/malik.amanj.7?mibextid=LQQJ4d"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </a>
 
                   <a
                     href="https://www.facebook.com/malik.amanj.7?mibextid=LQQJ4d"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </a>
 
                   <a
                     href="https://www.facebook.com/malik.amanj.7?mibextid=LQQJ4d"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <i className="fa-brands fa-whatsapp"></i>
                   </a>
                 </li>
               </ul>
             </div>
-          </a>
+          </div>
           <a
             data-aos="fade-down"
             data-aos-duration="2000"
@@ -54,105 +60,103 @@ const home = () => {
           >
             بەشەدڵخوازەکان <i className="fa-solid fa-heart"></i>
           </a>
-          <a
-            data-aos="fade-down"
-            data-aos-duration="1800"
-            href="#براندی جیهانی"
-          >
-            براندی جیهانی <i className="fa-solid fa-globe"></i>
-            <i class="fa-solid fa-angle-down"></i>
+          <div className="nav-item" data-aos="fade-down" data-aos-duration="1800">
+            <a href="#براندی جیهانی">
+              براندی جیهانی <i className="fa-solid fa-globe"></i>
+              <i className="fa-solid fa-angle-down"></i>
+            </a>
             <div className="dropdown">
               <ul>
                 <li>
-                  <a href="/EMPORIOARMANHome">ئیمپۆریۆ ئارمانی</a>
+                  <Link to="/EMPORIOARMANHome">ئیمپۆریۆ ئارمانی</Link>
                   <br />
-                  <a href="/LOUISVUITTONHome">لویس ڤیتۆن</a>
+                  <Link to="/LOUISVUITTONHome">لویس ڤیتۆن</Link>
                   <br />
-                  <a href="/VERSACEHome">ڤێرساچی</a>
+                  <Link to="/VERSACEHome">ڤێرساچی</Link>
                   <br />
-                  <a href="/adidasHome">ئەدیداس</a>
+                  <Link to="/adidasHome">ئەدیداس</Link>
                   <br />
-                  <a href="/LACOSTEHome">لاکۆست</a>
+                  <Link to="/LACOSTEHome">لاکۆست</Link>
                   <br />
-                  <a href="/GUCCLHome">گووتچی</a>
+                  <Link to="/GUCCLHome">گووتچی</Link>
                   <br />
-                  <a href="/CHANELHome">جانێل</a>
+                  <Link to="/CHANELHome">جانێل</Link>
                   <br />
-                  <a href="/NIKEHome">نایک</a>
+                  <Link to="/NIKEHome">نایک</Link>
                   <br />
-                  <a href="/PRADAHome">پرادا</a>
+                  <Link to="/PRADAHome">پرادا</Link>
                   <br />
-                  <a href="/DIORHome">دیۆر</a>
+                  <Link to="/DIORHome">دیۆر</Link>
                   <br />
-                  <a href="/POLOHome">پۆلۆ</a>
+                  <Link to="/POLOHome">پۆلۆ</Link>
                   <br />
-                  <a href="/ZARAHome">زاڕا</a>
+                  <Link to="/ZARAHome">زاڕا</Link>
                 </li>
               </ul>
             </div>
-          </a>
-          <a data-aos="fade-down" data-aos-duration="1600" href="#براندی ناوخۆ">
-            براندی ناوخۆ <i class="fa-solid fa-earth-africa"></i>
-            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div className="nav-item" data-aos="fade-down" data-aos-duration="1600">
+            <a href="#براندی ناوخۆ">
+              براندی ناوخۆ <i className="fa-solid fa-earth-africa"></i>
+              <i className="fa-solid fa-angle-down"></i>
+            </a>
             <div className="dropdown">
               <ul>
                 <li>
-                  <a href="/rawzHome">رەۆەز مەنسور</a>
+                  <Link to="/rawzHome">رەۆەز مەنسور</Link>
                   <br />
-                  <a href="/galarHome">گەڵەر ڤێ ئاپی</a>
+                  <Link to="/galarHome">گەڵەر ڤێ ئاپی</Link>
                   <br />
-                  <a href="/shvanHome">شڤان سەنتەر</a>
+                  <Link to="/shvanHome">شڤان سەنتەر</Link>
                   <br />
-                  <a href="/hrHome">ئێج ئار شوپین</a>
+                  <Link to="/hrHome">ئێج ئار شوپین</Link>
                   <br />
-                  <a href="/kHome">کەی فاشێون</a>
+                  <Link to="/kHome">کەی فاشێون</Link>
                   <br />
-                  <a href="/delmanHome">دیلمان براند</a>
+                  <Link to="/delmanHome">دیلمان براند</Link>
                   <br />
-                  <a href="/soranHome">سۆران کڵاس</a>
+                  <Link to="/soranHome">سۆران کڵاس</Link>
                   <br />
-                  <a href="/bussnisHome">بزنس کڵاس</a>
+                  <Link to="/bussnisHome">بزنس کڵاس</Link>
                   <br />
-                  <a href="/tahirHome">تاهیر کڵاس</a>
+                  <Link to="/tahirHome">تاهیر کڵاس</Link>
                   <br />
-                  <a href="/sanvitoHome">سان ڤیتۆ</a>
+                  <Link to="/sanvitoHome">سان ڤیتۆ</Link>
                   <br />
-                  <a href="/bayHome">بای دەنێز</a>
+                  <Link to="/bayHome">بای دەنێز</Link>
                   <br />
-                  <a href="/taherryHome">تاهیری</a>
+                  <Link to="/taherryHome">تاهیری</Link>
                   <br />
                 </li>
               </ul>
             </div>
-          </a>
+          </div>
           <a data-aos="fade-down" data-aos-duration="1400" href="#سەرەکی">
             سەرەکی
-            <i class="fa-regular fa-house"></i>
+            <i className="fa-regular fa-house"></i>
           </a>
 
           {/* ---------------------------------------------- */}
 
-          <button
+          <Link
             data-aos="fade-down"
             data-aos-duration="1200"
             className="btn-4"
+            to="/login"
           >
-            <a href="/login">
-              چوونەژوورەوە <i className="fa-solid fa-right-to-bracket"></i>
-            </a>
-          </button>
+            چوونەژوورەوە <i className="fa-solid fa-right-to-bracket"></i>
+          </Link>
 
           {/* ---------------------------------------------- */}
 
-          <button
+          <Link
             data-aos="fade-down"
             data-aos-duration="1000"
             className="btn-5"
+            to="/sighnUp"
           >
-            <a href="/sighnUp">
-              دروستکردنی هەژمار <i className="fa-solid fa-user-plus"></i>
-            </a>
-          </button>
+            دروستکردنی هەژمار <i className="fa-solid fa-user-plus"></i>
+          </Link>
         </nav>
 
         <h1 data-aos="zoom-in-right" data-aos-duration="2000" dir="rtl">

@@ -10,6 +10,7 @@ import img10 from "../assets/logo-local-brand/K FASHION.jpeg";
 import img11 from "../assets/logo-local-brand/taheery.jpg";
 import img12 from "../assets/logo-local-brand/GALAR.png";
 import img13 from "../assets/logo-local-brand/rwaz.png";
+import { Link } from "react-router-dom";
 const CartOne = () => {
   return (
     <div>
@@ -26,9 +27,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>BUSINESS CLASS</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/bussnisHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/bussnisHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* -----------card-one-------- */}
@@ -47,9 +48,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>SAN VITO</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/sanvitoHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/sanvitoHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* -----------card-one-------- */}
@@ -65,9 +66,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.3rem" }}>SORAN CLASS</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/soranHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/soranHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* -----------card-one-------- */}
@@ -82,9 +83,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.1rem" }}>TAHIR CLASS</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/tahirHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/tahirHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -105,9 +106,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>SHVAN CENTER</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/shvanHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/shvanHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -122,9 +123,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>HR SHOPING</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/hrHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/hrHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -139,9 +140,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>DELMAN BRAND</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/delmanHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/delmanHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -156,9 +157,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>K FASHION</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/kHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/kHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -178,9 +179,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>BAY DENIZ</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/bayHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/bayHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -198,9 +199,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>TAHERRY</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/taherryHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/taherryHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -215,9 +216,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>GALAR VIP</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/galarHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/galarHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -235,9 +236,9 @@ const CartOne = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>RAWZ MENSUR</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/rawzHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/rawzHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}

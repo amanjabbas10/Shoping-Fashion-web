@@ -10,6 +10,7 @@ import img11 from "../assets/logo-world-brand/Lv.png";
 import img12 from "../assets/logo-world-brand/prada.png";
 import img13 from "../assets/logo-world-brand/channal.png";
 import img14 from "../assets/logo-world-brand/cuccle.png";
+import { Link } from "react-router-dom";
 
 const CartTwo = () => {
   return (
@@ -29,14 +30,14 @@ const CartTwo = () => {
           <br />
           <br />
           <hr />
-          <div className="card-body">
-            <h5 style={{ marginTop: "1.5rem" }}>ADIDAS</h5>
-            <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/adidasHome">زیاتر ببینە</a>
-            </button>
+            <div className="card-body">
+              <h5 style={{ marginTop: "1.5rem" }}>ADIDAS</h5>
+              <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
+              <Link className="btn-card" to="/adidasHome">
+                زیاتر ببینە
+              </Link>
+            </div>
           </div>
-        </div>
         {/* -----------card-one-------- */}
         <div
           data-aos="fade-up"
@@ -48,14 +49,14 @@ const CartTwo = () => {
           <br />
           <br />
           <hr />
-          <div className="card-body">
-            <h5 style={{ marginTop: "1.5rem" }}>VERSACE</h5>
-            <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/VERSACEHome">زیاتر ببینە</a>
-            </button>
+            <div className="card-body">
+              <h5 style={{ marginTop: "1.5rem" }}>VERSACE</h5>
+              <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
+              <Link className="btn-card" to="/VERSACEHome">
+                زیاتر ببینە
+              </Link>
+            </div>
           </div>
-        </div>
         {/* -----------card-one-------- */}
         {/* -----------card-two-------- */}
         <div
@@ -68,14 +69,14 @@ const CartTwo = () => {
           <br />
           <br />
           <hr />
-          <div className="card-body">
-            <h5 style={{ marginTop: "1.4rem" }}>LACOSTE</h5>
-            <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/LACOSTEHome">زیاتر ببینە</a>
-            </button>
+            <div className="card-body">
+              <h5 style={{ marginTop: "1.4rem" }}>LACOSTE</h5>
+              <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
+              <Link className="btn-card" to="/LACOSTEHome">
+                زیاتر ببینە
+              </Link>
+            </div>
           </div>
-        </div>
         {/* -----------card-one-------- */}
         <div
           data-aos="fade-up"
@@ -97,9 +98,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>GUCCL</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/GUCCLHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/GUCCLHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -122,9 +123,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>ZARA</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/ZARAHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/ZARAHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -142,9 +143,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>POLO</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/POLOHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/POLOHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -161,9 +162,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>DIOR</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/DIORHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/DIORHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -180,9 +181,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>PRADA</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/PRADAHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/PRADAHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -209,9 +210,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>LOUIS VUITTON</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/LOUISVUITTONHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/LOUISVUITTONHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -228,9 +229,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>NIKE</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/NIKEHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/NIKEHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -254,9 +255,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>CHANEL</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/CHANELHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/CHANELHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
@@ -280,9 +281,9 @@ const CartTwo = () => {
           <div className="card-body">
             <h5 style={{ marginTop: "1.5rem" }}>EMPORIO ARMAN</h5>
             <p>talk about brand Lorem ipsum dolor sit amet consectetur</p>
-            <button className="btn-card">
-              <a href="/EMPORIOARMANHome">زیاتر ببینە</a>
-            </button>
+            <Link className="btn-card" to="/EMPORIOARMANHome">
+              زیاتر ببینە
+            </Link>
           </div>
         </div>
         {/* ------------------- */}
