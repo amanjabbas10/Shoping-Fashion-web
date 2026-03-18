@@ -101,7 +101,7 @@ import img087 from "../../assets/brand-businees-Class/bussins class women/087.jp
 import img088 from "../../assets/brand-businees-Class/bussins class women/088.jpg";
 import img089 from "../../assets/brand-businees-Class/bussins class women/089.jpg";
 // ------------BAgs------------//
-const rawzcartWomen = () => {
+const RawzcartWomen = () => {
   const [liked, setLiked] = useState(false);
   return (
     <div>
@@ -2798,4 +2798,4 @@ const rawzcartWomen = () => {
   );
 };
 
-export default rawzcartWomen;
+export default RawzcartWomen;

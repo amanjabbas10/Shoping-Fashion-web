@@ -1,10 +1,4 @@
-import img2 from "../../assets/brand-businees-Class/shirt Women.jpg";
-import img3 from "../../assets/brand-businees-Class/T-shirt women.jpg";
-import img4 from "../../assets/brand-businees-Class/t shirt 1.jpg";
 import img5 from "../../assets/brand-businees-Class/jeans women.jpg";
-import img6 from "../../assets/brand-businees-Class/jacket women.jpg";
-import img7 from "../../assets/brand-businees-Class/shoes women.jpg";
-import img8 from "../../assets/brand-businees-Class/bag women.jpg";
 import { useState } from "react";
 
 // ------------Shirt------------//

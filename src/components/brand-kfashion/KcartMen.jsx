@@ -1,10 +1,3 @@
-import img2 from "../../assets/brand-businees-Class/shirt 2.jpg";
-import img3 from "../../assets/brand-businees-Class/t-shirt zara navbar2 (2).jpg";
-import img4 from "../../assets/brand-businees-Class/t shirt 1.jpg";
-import img5 from "../../assets/brand-businees-Class/jeans 8.jpg";
-import img6 from "../../assets/brand-businees-Class/jacket 8.png";
-import img7 from "../../assets/brand-businees-Class/shose 11.jpg";
-import img8 from "../../assets/brand-businees-Class/bags.avif";
 import { useState } from "react";
 // ------------Shirt------------
 import img02 from "../../assets/brand-businees-Class/bussins class/2.jpg";

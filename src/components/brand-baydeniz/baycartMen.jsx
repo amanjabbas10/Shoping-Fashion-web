@@ -2,7 +2,6 @@ import { useState } from "react";
 // ------------Shirt------------
 import img02 from "../../assets/brand-businees-Class/bussins class/2.jpg";
 import img03 from "../../assets/brand-businees-Class/bussins class/3.jpg";
-import img04 from "../../assets/brand-businees-Class/bussins class/4.jpg";
 import img05 from "../../assets/brand-businees-Class/bussins class/5.jpg";
 import img06 from "../../assets/brand-businees-Class/bussins class/6.jpg";
 import img07 from "../../assets/brand-businees-Class/bussins class/7.jpg";

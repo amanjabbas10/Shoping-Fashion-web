@@ -14,3 +14,8 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Troubleshooting (Windows)
+
+- If PowerShell blocks `npm` with “running scripts is disabled”, run commands via `cmd.exe` (example: `cmd /c npm run dev`) or run `npm.cmd` directly.
+- If Vite fails with `Error: spawn EPERM` while loading `vite.config.js`, try `npx vite build --configLoader native`.

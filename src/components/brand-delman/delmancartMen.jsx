@@ -2,7 +2,6 @@ import { useState } from "react";
 // ------------Shirt------------
 import img02 from "../../assets/brand-businees-Class/bussins class/2.jpg";
 import img03 from "../../assets/brand-businees-Class/bussins class/3.jpg";
-import img04 from "../../assets/brand-businees-Class/bussins class/4.jpg";
 import img05 from "../../assets/brand-businees-Class/bussins class/5.jpg";
 import img06 from "../../assets/brand-businees-Class/bussins class/6.jpg";
 import img07 from "../../assets/brand-businees-Class/bussins class/7.jpg";
@@ -104,7 +103,7 @@ import img092 from "../../assets/brand-businees-Class/bussins class/92.jpg";
 import img093 from "../../assets/brand-businees-Class/bussins class/93.jpg";
 // -----------BAGS-------------
 
-const delmancartMen = () => {
+const DelmancartMen = () => {
   const [liked, setLiked] = useState(false);
   return (
     <div>
@@ -2807,4 +2806,4 @@ const delmancartMen = () => {
   );
 };
 
-export default delmancartMen;
+export default DelmancartMen;
