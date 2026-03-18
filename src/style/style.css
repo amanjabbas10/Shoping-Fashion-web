@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    scrollbar-width: thin;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.background-home{
+    background-image: url(../assets//de.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.background-home h1{
+    margin-right: 2rem;
+    color: white;
+    margin-top: 15rem;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+.background-home p{
+    color: white;
+    margin-right: 2rem;
+    font-size: 17.5px;
+}
+.background-home .btn-2{
+    margin-left:33rem;
+    margin-right:9px;
+    width:10%;
+    padding: 2px;
+    background: none;
+    background: wheat;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow:  0 0 5px 1px wheat;
+    transition: all ease 0.3s 0s;
+}
+.background-home .btn-2:hover{    
+    transform: scale(0.96);
+}
+.background-home .btn-3{
+    margin-right:5px;
+    width:10%;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    box-shadow:  0 0 5px 1px white;
+    transition: all ease 0.3s 0s;
+}
+.background-home .btn-3:hover{    
+    transform: scale(0.96);
+}
+/* ----dropdown---- */
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+.dropdown ul li{
+    width: 90px;
+}
+.dropdown ul li a{
+    color:#1E293B;
+}
+nav a:hover .dropdown{
+    display: block;
+}
+/* ---dropdown----- */
+nav{
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    display: inline-flex;
+    padding-top: 9px;
+}
+nav img{
+    max-width: 210px;
+}
+nav a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 15px;
+    text-shadow: 0 0 9px wheat;
+    transition: all ease 0.3s 0s;
+}
+nav a:hover{  
+    transform: translateY(-5px);
+}
+nav .btn-4{
+    width: 9%;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    background: wheat;
+    color: black;
+    transition: all ease 0.3s 0s;
+    box-shadow: 0 0 8px 1px wheat;
+}
+nav .btn-4 a{ 
+    color: black;
+    font-size: 14px;
+}
+nav .btn-4:hover{
+    transform: scale(0.96);
+}
+nav .btn-5 {
+    box-shadow: 0 0 8px 1px white;
+    width:10%;
+    padding: 4px;
+    border-radius: 5px;
+    border:none;
+    transition: all ease 0.3s 0s;
+}
+nav .btn-5 a{
+    color: black;
+    font-size: 14px;
+}
+nav .btn-5:hover{
+    transform: scale(0.96);
+}
+/* -------------- */
+/* part login start */
+.home-login{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets//dreamina2222222222222211-10-2557-A\ wide-angle\,\ zoomed-out\ shot\ of\ a\ moder....png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.back{
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    font-size: 20px;  
+    font-weight: 700;
+    letter-spacing: 5px; 
+    text-shadow: 0 2px 10px white; 
+}
+form{
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 3rem;
+    height: 76%;
+    border-radius: 3px;
+    backdrop-filter: blur(2px);
+    background-color:rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.9);
+} 
+form hr{
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+form .hr-hr-0{
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    width: 67%;
+    margin-left: 5.4rem;
+    border-radius: 9px;
+}
+form h1{
+text-align: center;
+color:#1E293B;
+margin-bottom: 6px;
+}
+form label{
+    color:#1E293B;
+    margin-left: 15rem; 
+}
+form input{
+    margin-left: 7rem;
+    padding: 6px;
+    border: none;
+    margin-bottom: 9px;
+    background: none;
+    border-bottom: 1px solid  #1E293B;
+    color: white;
+}
+form a.home-f{
+    margin-left:10rem;
+    text-decoration: none ;
+    color:#1E293B;
+    text-decoration: underline;
+}
+form .btn-f-0{
+    background: none;
+    width: 50%;
+    margin-top: 9px;
+    margin-left: 8rem;
+    border: none; 
+    border-radius: 3px;
+    padding: 3px;
+    background: #3b82f6;
+    transition: all ease 0.3s 0s;
+    box-shadow:  0 0 5px 1px #3b82f6;
+}
+form .btn-f-0:hover{
+    background: #478dff;
+    transform: scale(0.99);
+}
+form .btn-f-0 a{
+    text-decoration: none;
+    font-size: 14px;    
+    color: white;
+}
+form  .btn-f {
+    background: none;
+    border: none;
+    width: 50%;
+    margin-top: 9px;
+    margin-left: 8rem;
+    border-radius: 3px;
+    padding: 4px;
+    background: #1E293B;
+    transition: all ease 0.3s 0s;
+    box-shadow:  0 0 5px 2px #1E293B;
+}
+form  .btn-f:hover{
+    transform: scale(0.99);
+    background: #1f2e46
+}
+form  .btn-f a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+form  .btn-f-1{
+    margin-left: 7rem;
+    margin-top: 1rem;
+    width:30%;
+    padding: 2px;
+    border-radius: 3px;
+    border: none;
+    border: 1px solid black;
+}
+form h5{
+    margin-left: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1E293B;
+} 
+ form .icon-0 i{
+    margin-left: 5rem;
+    width: 61%;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    background: #fff;
+    cursor: pointer; 
+    box-shadow:  0 0 5px 1px white;
+    transition: all ease 0.3s 0s;
+}
+form .icon-0 i:hover{
+    transform: scale(0.96);
+}
+form .icon-9 i{
+    margin-left: 1.9rem;
+    width: 80%;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    background: #478dff;
+    color: white;
+    cursor: pointer;
+    box-shadow:  0 0 5px 1px #3b82f6;
+    transition: all ease 0.3s 0s;
+}
+form .icon-9 i:hover{
+    transform: scale(0.96);
+}
+form .icon-8 i{
+    margin-left: 1rem;
+    width: 100%;
+    padding: 5px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    background: #1E293B;
+    color: white;
+    cursor: pointer; 
+    transition: all ease 0.3s 0s;
+    box-shadow:  0 0 5px 2px #1E293B;
+}
+form .icon-8 i:hover{
+     transform: scale(0.96);
+}
+.all-icon{
+    display: flex;
+ }
+/* part password start  */
+.pass-part{
+    font-size: 30px;
+}
+.pass-lable{
+    margin-left: 17.5rem;
+}
+.pass-lable-0{
+    margin-left: 16rem;
+}
+.pass-lable-9{
+    margin-left: 17.2rem;
+}
+/* part create account */
+.sghn-lable-9{
+    margin-left: 17.7rem;
+}
+/* part create account */
+
+/* part password end */
+
+
+/* part login End*/
+/* -------------- */
+/* -------------- */
+/* part brand start براندی ناوخۆ */
+/* ------------------------------- */
+/* 
+we write code about cart */
+.type-one{
+    text-align: center;
+    margin-top: 7rem;
+}
+.type-two{
+    width: 15%;
+    margin-left: 33.6rem;
+    margin-top: 9px;
+    border: 1.6px solid wheat;
+    box-shadow: 0 0 9px 2px wheat ;
+    border-radius: 5px;
+}
+.type-three{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 17px;
+}
+.card{
+    width: 18%;
+    border: 1px solid black;
+    margin-left: 4.5rem;
+    border-radius: 5px;
+    height: 16%;
+    transition: all ease 0.3s 0s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:  0 0 9px 1px grey;
+}
+.card img{
+    max-width: 227px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 7px;
+}
+.card-body h5{
+text-align: center;
+font-size: 17px;
+}
+.card-body p{
+    text-align: center;
+    margin-bottom: 9px;
+}
+.card-body button{
+    margin-bottom: 10px;
+    margin-left: 2.8rem;
+}
+ .card-body .btn-card {
+    width: 60%;
+    padding: 3px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 15px;
+    background: #1E293B;
+    transition: all ease 0.3s 0s;
+}
+ .card-body .btn-card:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 5px 1px #1E293B;
+}
+.card-body .btn-card a{
+    color: white;
+    text-decoration: none;
+}
+.all-card{
+    display: flex;
+}
+/* -----------------------ACTICE---heart------------------ */
+/* -----------------------ACTICE---heart------------------ */
+/* input{
+    display: none;
+}
+label{
+    font-size: 2.6rem;
+    color: #E3E3E3;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.1s ease ;
+}
+input:checked+label{
+    color: #ff3b5c;
+    transform: scale(1.1);
+}
+input:active{
+    transform: scale(.9);
+} */
+/* -----------------------ACTICE---heart------------------ */
+/* -----------------------ACTICE---heart------------------ */
+
+/* part brand End براندی ناوخۆ */
+/* ------------------------------- */
+ /* about all brand card start */
+ .card-brand{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 5px;
+    transition: all ease 0.3s 0s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.9);
+}
+.card-brand img{
+    max-width: 200px;
+}
+.card-brand:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.9);
+}
+.card-body-brand h3{
+    text-align: center;
+    color: #1E293B;
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-right: 9px;
+}
+.background-all-home-page{
+    background-image: url(../assets/dreamina2222222222222211-10-2557-A\ wide-angle\,\ zoomed-out\ shot\ of\ a\ moder....png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.hr-hpme-page{
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1.6px solid white;
+    box-shadow: 0 0 9px 2px white ;
+}
+ /* about all brand card End */
+ /* -------------------------- */
+ /* part buy clothing start */
+ .header-part img{
+    max-width: 190px;
+ }
+ .header-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+ }
+ .header-icons i {
+    margin: 0 10px; /* Adds space between the icons */
+    font-size: 1.2rem; /* Makes icons a bit larger */
+    cursor: pointer;
+ }
+ .header-icons a{
+    color: #1f2e46;
+ }
+ .navbar-two{
+    background: #E3E3E3;
+    padding: 9px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 9px;
+     z-index: 1000;
+ }
+ .navbar-two a{
+    color: #1E293B;
+    font-size: 1.2rem; 
+}
+.navbar-two a i{
+      font-size: 1.2rem; 
+      color: grey;
+}
+.back-brand-home{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    margin-top: 3rem;
+    font-size: 27px;  
+    font-weight: 700;
+    position:fixed;
+    transition: all ease 0.3s 0s;
+ }
+ .back-brand-home:hover{
+     transform: translateX(-5px);
+     text-shadow: 0 2px 20px grey; 
+}
+.image-home-0{
+    display: flex;
+    overflow: hidden;
+}
+.image-home-0 img{
+    margin-top: 10rem;
+    margin-left: 2rem;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.image-home-0 .image-home-9 .image-home-8 h1{
+    margin-top: 11rem;
+    margin-right: 2rem;
+    font-size: 25px;
+    color: #1f2e46;
+}
+.image-home-0 .image-home-9 .image-home-8 p{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    text-align: start;
+    color: #1f2e46;
+}
+.image-home-0 .image-home-9 .image-home-8 .brand-btn-0 {
+    margin-top: 25px;
+    margin-left: 26rem;
+    padding: 3px;
+    width: 18%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;  
+    margin-bottom: 25px;
+    color: #1f2e46;
+    font-size: 16px;
+}
+.image-home-0 .image-home-9 .image-home-8 .brand-btn-9{
+    font-size: 16px;
+    margin-left: 9px;
+    padding: 3px;
+    width: 18%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background:black;
+    color: #ddd;
+}
+.image-home-0 .image-home-9 .image-home-8 .icons i{
+    margin-top: 20px;
+    margin-right:4.4rem;
+    font-size: 23px;
+    transition: all ease 0.3s 0s;
+    color: #1f2e46;
+}
+.image-home-0 .image-home-9 .image-home-8 .icons i:hover{
+    transform: translateY(-5px);
+}
+ .animation h2{
+    margin-left: 6rem;
+ }
+ /* part about buy clothing in cart i mean this part cart-all-brand-00 */
+.cart-all-brand-00{
+    border: 1px solid black;
+    width: 18%;
+    margin-left: 4.5rem;
+    margin-top: 5rem;
+    height: 18%;
+    border-radius: 5px;
+    transition: all ease 0.3s 0s;
+}
+.cart-all-brand-00:hover{
+    transform: translateY(5px);
+    box-shadow: 0 0 8px 1px grey;
+}
+.cart-all-brand-00 img{
+    max-width: 209px;
+    margin-left: 1rem;
+}
+ /* part buy clothing End */
+/* ---------start---------------- */
+/* reklam part--------- */
+.reklam{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x:auto ;
+    gap:1em ;
+    scrollbar-width: none;
+}
+.logo-all-brand{
+    height: 6em;
+    padding: 1em;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    flex: 0 0 5em;
+}
+.logo-all-brand img{
+    max-width: 100px;
+    transition: all ease 0.3s 0s;
+}
+.logo-all-brand img:hover
+{
+    transform: translateY(-10px);
+}
+.groupe-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 15s infinite linear;
+}
+@keyframes spin{
+    form {translate: 0;}
+    to {translate:-100%;}
+}
+/* reklam part--------- */    
+/* part contact start */
+/* ------------------------- */
+.form-cont{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh ;
+    width:100% ;
+}
+.form-contact-1 {
+    box-shadow:0 0 8px 2px grey;
+    width: 90%;
+    margin-left: 3rem;
+    margin-top: 9px;
+    border-radius: 5px;
+    height: 84%;
+    background: #E3E3E3;
+    background-image: url(../assets/dreamina2222222222222211-10-2557-A\ wide-angle\,\ zoomed-out\ shot\ of\ a\ moder....png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-contact-1 .form-contact-2 .form-contact-3{
+    margin-left:24rem;
+    margin-top: 1rem;
+}
+.form-contact-3 {
+    padding: 15px;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    box-shadow:0 0 8px 2px grey;
+}
+.form-contact-1 .form-contact-2 .form-contact-3  label{
+    color:#E3E3E3;
+}
+.form-contact-1 .form-contact-2 .form-contact-3 input{
+    border: 1px solid #E3E3E3;
+    background: none;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+}
+.form-contact-1 .form-contact-2 .form-contact-3 textarea{
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    padding: 7px;
+    backdrop-filter: blur(4px);
+    background: none;
+    color: white;
+}
+.form-contact-1 .form-contact-2 .form-contact-3 .sub{
+    background: none;
+     cursor: pointer;
+     transition: all ease  0.3s 0s;
+     
+    }
+    .form-contact-1 .form-contact-2 .form-contact-3 .sub:hover{
+        transform: scale(0.97);
+        box-shadow:0 0 8px 2px grey;
+}
+.form-contact-1{
+    display: flex;
+}
+.form-contact-1 .form-contact-2 .form-contact-3 a{
+    margin-left:5rem;
+}
+.form-contact-1 .form-contact-2 .form-contact-3 a i{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:whitesmoke;
+    transition: all ease  0.3s 0s;
+    
+}
+.form-contact-1 .form-contact-2 .form-contact-3 a i:hover{
+    transform: translateY(-5px);
+}
+/* part contact end */
+/* -------------------- */
+/* part footer start */
+.fot-2{
+border-radius: 24px 24px 0 0;
+background-color: #1E293B;
+padding: 15px;
+box-shadow:  0 0 5px 1px #1E293B;
+}
+ .col img{
+    margin-top: 9px;
+    max-width: 300px;
+    margin-bottom: 3rem;
+}
+.col p{
+    margin-right: 8px;
+}
+.row{
+    width: 100%; 
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+ }
+ .col{
+    flex-basis: 17%;
+    padding: 10px;
+ }
+ .col h3 a{
+    color: white;
+    text-decoration: none;
+}
+.col h3{
+     transition: all ease 0.3s 0s;
+ }
+ .col h3:hover{
+    transform: translateY(-5px);
+}
+.col h4:hover{
+    transform: translateY(-5px);
+ }
+ .footer-hr{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    width:55%;
+    border-radius: 5px;
+ }
+ .fot-2 h4{
+    margin-left: 9px;
+    color: grey;
+    font-size: 15px;
+      transition: all ease 0.3s 0s;
+ }
+ .col h3{
+    color: white;
+ }
+ .col p{
+    color: white;
+ }
+ .copy{
+    color: grey;
+    text-align: center;
+    margin-top: 9px;
+    font-size: 12px;
+ }
+ h4.email{
+    margin-top: 40px;
+    font-size: 13px;
+    border-bottom: 1px solid white ;
+    width: 75%; 
+    transition: all ease 0.3s 0s;
+}
+h4.number-h4{
+    margin-top: 50px;
+    font-size: 13px;
+    transition: all ease 0.3s 0s;
+}
+.social{
+    display: flex;
+    transition: all ease 0.3s 0s;
+}
+h4  i{
+    margin-top: 2rem; 
+    font-size: 20px;
+    color: black;
+    transition: all ease 0.3s 0s;
+    background: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: 2px;
+}
+h4  i:hover{
+     transform: translateY(-5px);
+}
+/* finall-buy-9 */
+/* finall-buy-9 */
+/* finall-buy-9 */
+.finall-but-clothing form{
+    background-image: url(../assets/dreamina2222222222222211-10-2557-A\ wide-angle\,\ zoomed-out\ shot\ of\ a\ moder....png);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.buy-clothing-0{
+    display: inline-flex;
+}
+.buy-clothing-0 img{
+    max-width: 390px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 h1 {
+margin-top: 5rem;
+margin-bottom: 2rem;
+margin-right: 4rem;
+overflow: hidden;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 p{
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    overflow: hidden;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 .color{
+    margin-left: 5rem;
+    font-size: 17px;
+    display: inline-flex;
+    transition: all ease 0.3s 0s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 .color:hover{
+    transform: translateY(-5px);
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 .size button{
+    overflow: hidden;
+    margin-left: 5rem;  
+    margin-bottom: 1.5rem;
+    width: 5%;
+    background:#ECEFF1;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 h5{
+    margin-right: 4rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 h6{
+    font-size: 17px;
+    margin-right: 4rem;
+    font-weight: 390;
+    margin-bottom: 1rem;
+}
+.h2-but-clothing{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color:#1E293B;
+    text-align: center;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 button{
+    margin-left: 20rem;
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #1f2e46;
+    background: #1f2e46;
+    font-size: 16px;
+    transition: all ease 0.3s 0s;
+    box-shadow: 0 0 5px 1px #1f2e46;
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 button:hover{
+    transform: scale(0.95);
+}
+.buy-clothing-0 .buy-clothing-9 .buy-clothing-8 button a{
+    text-decoration: none;
+    color: white;
+}
+.finall-but-clothing form{
+    border: 1px solid none;
+    padding-top: 2rem;
+    width: 50%;
+    backdrop-filter: blur(9px);
+    box-shadow:0 0 8px 2px grey;
+}
+.finall-but-clothing form input{
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 75%;
+    padding: 9px;
+    margin-left: 5rem;
+    margin-left: 5rem;
+    color:white;
+}
+.finall-but-clothing form  label{
+    color: white;
+}
+.finall-but-clothing form textarea{
+    margin-left: 5rem;
+    padding: 9px;
+    border-radius: 5px;
+    background: none;
+     border: 1px solid white;
+     color: white;
+}
+.dlivere img{
+    max-width: 900px;
+}
+.dlivere button{
+    margin-top: 2rem;
+    margin-left: 12rem;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25%;
+    transition: all ease 0.3s 0s;
+}
+.dlivere button:hover{
+    transform: scale(0.95);
+    box-shadow:0 0 7px 1px grey;
+
+}
+.dlivere button img{
+    max-width: 200px;
+}
+.order button{
+    background-color:#328E6E;
+    /* border:1px solid black; */
+    border: none;
+    margin-left: 33rem;
+    padding: 15px;
+    width: 20%;
+    border-radius: 5px;
+    font-size: 27px;    
+    transition: all ease 0.3s 0s;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 9px 2px #1f6c51;
+}
+.order button:hover{
+    background: #297b5f;
+    color: white;
+    transform: scale(0.98);
+}
+.cart-all-brand-00 .cart-all-brand-09 h4{
+    padding: 4px;
+    color: #1f2e46;
+    font-weight: 300;
+}
+.cart-all-brand-00 .cart-all-brand-09 h5{
+    color: #1f2e46;
+    font-weight: 500;
+    padding: 4px;
+}
+.cart-all-brand-00 .cart-all-brand-09 a button{
+    background: white;
+    border: 1px solid #1f2e46;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left:5px;
+    margin-top:1rem;
+    margin-bottom: 9px;
+    width: 60%;
+    transition: all ease 0.3s 0s;
+}
+.cart-all-brand-00 .cart-all-brand-09 a button:hover{
+    transform: translateY(-5px);
+}
+.cart-all-brand-00 .cart-all-brand-09 .fa-regular{
+    margin-left: 3.4rem;
+    font-size: 17px;
+}
+
+/* finall-buy-9 */
+/* finall-buy-9 */
+/* finall-buy-9 */
+/* finall-buy-9 */
+/* .finall-buy-9{
+    } */
+    
+    
+/* part footer End */
+/* -------------------- */
+/* ----------Enddd--------------- */
