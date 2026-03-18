@@ -190,6 +190,7 @@ import {
   Routes,
   Route,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 
 function AosManager() {
@@ -203,11 +204,63 @@ function AosManager() {
   return null;
 }
 
+function AnchorInterceptor() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    function onClick(event) {
+      if (event.defaultPrevented) return;
+      if (event.button !== 0) return;
+      if (event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) return;
+
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const anchor = target.closest("a[href]");
+      if (!anchor) return;
+      if (anchor.getAttribute("target")) return;
+      if (anchor.hasAttribute("download")) return;
+
+      const hrefAttr = anchor.getAttribute("href");
+      if (!hrefAttr) return;
+      if (hrefAttr.startsWith("#")) return;
+      if (hrefAttr.startsWith("mailto:") || hrefAttr.startsWith("tel:")) return;
+      if (hrefAttr.startsWith("//")) return;
+      if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(hrefAttr)) return;
+      if (!hrefAttr.startsWith("/")) return;
+
+      // Same-origin only (avoid breaking external links that happen to start with "/")
+      try {
+        const url = new URL(anchor.href);
+        if (url.origin !== window.location.origin) return;
+      } catch {
+        return;
+      }
+
+      // If someone hardcoded the Vite base into an href, strip it before navigating.
+      const base = (import.meta.env.BASE_URL || "/").replace(/\/+$/, "");
+      let to = hrefAttr;
+      if (base && base !== "/" && (to === base || to.startsWith(base + "/"))) {
+        to = to.slice(base.length) || "/";
+      }
+
+      event.preventDefault();
+      navigate(to);
+    }
+
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, [navigate]);
+
+  return null;
+}
+
 function App() {
   return (
     <div>
       <Router basename={import.meta.env.BASE_URL}>
         <AosManager />
+        <AnchorInterceptor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reklamCart" element={<ReklamCart />} />
@@ -220,6 +273,7 @@ function App() {
           <Route path="/CartThree" element={<CartThree />} />
           <Route path="/bussnisHome" element={<BussnisHome />} />
           <Route path="/bussnisMen" element={<BussnisMen />} />
+          <Route path="/bussnisWomen" element={<BussnisWomen />} />
           <Route path="/BussnisWomen" element={<BussnisWomen />} />
           <Route path="/cartAllbrand" element={<CartAllbrand />} />
           <Route path="/cartforWomen" element={<CartforWomen />} />
