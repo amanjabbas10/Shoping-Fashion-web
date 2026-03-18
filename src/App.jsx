@@ -185,32 +185,25 @@ import VERSACEHome from "./components/---all-brand-world---/brand-versace/VERSAC
 import VERSACEMen from "./components/---all-brand-world---/brand-versace/VERSACEMen";
 import VERSACEWomen from "./components/---all-brand-world---/brand-versace/VERSACEWomen";
 
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 function AosManager() {
-  const location = useLocation();
-
+  const { pathname } = useLocation();
   useEffect(() => {
-    requestAnimationFrame(() => {
-      AOS.refreshHard();
-    });
-  }, [location.pathname]);
-
+    AOS.init({ duration: 1000 });
+  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
 function App() {
-  useEffect(() => {
-    try {
-      AOS.init();
-      requestAnimationFrame(() => {
-        AOS.refreshHard();
-      });
-    } catch {
-      document.documentElement.classList.add("aos-missing");
-    }
-  }, []);
-
   return (
     <div>
       <Router basename={import.meta.env.BASE_URL}>

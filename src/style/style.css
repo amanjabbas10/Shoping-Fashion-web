@@ -139,6 +139,7 @@ nav .btn-5 {
     font-size: 14px;
     color: black;
     transition: all ease 0.3s 0s;
+    background-color: white;
 }
 nav .btn-5:hover{
     transform: scale(0.96);
