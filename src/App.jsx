@@ -187,7 +187,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router basename={import.meta.env.Shoping - Fashion - web}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reklamCart" element={<ReklamCart />} />
