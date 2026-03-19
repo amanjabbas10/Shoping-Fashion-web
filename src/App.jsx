@@ -245,6 +245,10 @@ function AnchorInterceptor() {
       }
 
       event.preventDefault();
+      event.stopPropagation();
+      if (typeof event.stopImmediatePropagation === "function") {
+        event.stopImmediatePropagation();
+      }
       navigate(to);
     }
 
