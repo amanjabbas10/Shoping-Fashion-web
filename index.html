@@ -10,7 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-  <script type="module" crossorigin src="/Shoping-Fashion-web/assets/index-3sVOMnUd.js"></script>
+  <script type="module" crossorigin src="/Shoping-Fashion-web/assets/index-D9QKHQOr.js"></script>
   <link rel="stylesheet" crossorigin href="/Shoping-Fashion-web/assets/index-CFGJt2ga.css">
 </head>
 
@@ -30,6 +30,75 @@
         window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
       }
     })(window.location);
+  </script>
+  <script type="text/javascript">
+    // GitHub Pages project sites live under `/Shoping-Fashion-web/`. Many components use `<a href="/route">`
+    // which would otherwise navigate to `https://<user>.github.io/route` (wrong).
+    // This rewrites those hrefs to include the base (e.g. `/Shoping-Fashion-web/route`).
+    (function () {
+      var BASE_URL = "/Shoping-Fashion-web/";
+      function normalizeBase(base) {
+        if (!base) return "/";
+        if (base[0] !== "/") base = "/" + base;
+        if (base[base.length - 1] !== "/") base = base + "/";
+        return base;
+      }
+      var base = normalizeBase(BASE_URL);
+      if (base === "/") return;
+      var baseNoTrailing = base.replace(/\/+$/, "");
+
+      function shouldIgnoreHref(href) {
+        if (!href) return true;
+        if (href[0] === "#") return true;
+        if (href.indexOf("mailto:") === 0) return true;
+        if (href.indexOf("tel:") === 0) return true;
+        if (href.indexOf("//") === 0) return true;
+        if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(href)) return true;
+        return false;
+      }
+
+      function rewriteAnchor(a) {
+        var href = a.getAttribute("href");
+        if (shouldIgnoreHref(href)) return;
+        if (href[0] !== "/") return;
+        if (href === baseNoTrailing || href.indexOf(baseNoTrailing + "/") === 0) return;
+        a.setAttribute("href", baseNoTrailing + href);
+      }
+
+      function rewriteAll(root) {
+        var anchors = (root || document).querySelectorAll("a[href]");
+        for (var i = 0; i < anchors.length; i++) rewriteAnchor(anchors[i]);
+      }
+
+      // Initial pass + keep up with React rendering.
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function () {
+          rewriteAll(document);
+        });
+      } else {
+        rewriteAll(document);
+      }
+
+      var obs = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          var m = mutations[i];
+          if (m.type === "attributes" && m.target && m.attributeName === "href") {
+            rewriteAnchor(m.target);
+          } else if (m.type === "childList" && m.addedNodes) {
+            for (var j = 0; j < m.addedNodes.length; j++) {
+              var node = m.addedNodes[j];
+              if (node && node.nodeType === 1) rewriteAll(node);
+            }
+          }
+        }
+      });
+      obs.observe(document.documentElement, {
+        subtree: true,
+        childList: true,
+        attributes: true,
+        attributeFilter: ["href"],
+      });
+    })();
   </script>
   <div id="root"></div>
 
